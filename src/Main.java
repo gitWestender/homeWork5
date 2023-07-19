@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2("Android", 2021);
         task3(2100);
+        task4();
     }
 
     static void task1() {
@@ -44,13 +45,32 @@ public class Main {
         }
     }
 
-    static void task3(int year){
+    static void task3(int year) {
         System.out.println("\nЗадание 3:");
 
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
+        }
+    }
+
+    static void task4() {
+        System.out.println("\nЗадание 4:");
+        int deliveryDistance = 95;
+        int daysToGo;
+
+        if (deliveryDistance < 20) {
+            daysToGo = 1;
+            System.out.println("Потребуется дней: " + daysToGo);
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            daysToGo = 2;
+            System.out.println("Потребуется дней: " + daysToGo);
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            daysToGo = 3;
+            System.out.println("Потребуется дней: " + daysToGo);
+        } else {
+            System.out.println("Доставки нет");
         }
     }
 }
