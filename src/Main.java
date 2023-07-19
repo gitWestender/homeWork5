@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2("Android", 2021);
+        task3(2100);
     }
 
     static void task1() {
@@ -40,6 +41,16 @@ public class Main {
                 break;
             default:
                 System.out.println("Под вашу операционную систему нечего скачивать");
+        }
+    }
+
+    static void task3(int year){
+        System.out.println("\nЗадание 3:");
+
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
         }
     }
 }
