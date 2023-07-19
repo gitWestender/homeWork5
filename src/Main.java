@@ -4,6 +4,7 @@ public class Main {
         task2("Android", 2021);
         task3(2100);
         task4();
+        task5(10);
     }
 
     static void task1() {
@@ -71,6 +72,37 @@ public class Main {
             System.out.println("Потребуется дней: " + daysToGo);
         } else {
             System.out.println("Доставки нет");
+        }
+    }
+
+    static void task5(int monthNumber) {
+        System.out.println("\nЗадание 5:");
+
+        switch (monthNumber) {
+            case 1:
+            case 2:
+                System.out.println("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            case 12:
+                System.out.println("Зима");
+                break;
+            default:
+                break;
         }
     }
 }
